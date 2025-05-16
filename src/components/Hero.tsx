@@ -62,7 +62,7 @@ const Hero = () => {
               <img
                 src="/lovable-uploads/0000cb86-08b8-41e7-8fed-a01f2e7179de.png"
                 alt="Espírito Bitcoin Logo"
-                className="w-full h-full object-contain mix-blend-multiply"
+                className="w-full h-full object-contain"
               />
               <div className="absolute -inset-1 rounded-full bg-gradient-to-r from-espirito-blue via-purple-500 to-espirito-orange opacity-50 blur-xl -z-10 animate-pulse" />
             </div>
