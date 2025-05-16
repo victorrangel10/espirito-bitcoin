@@ -29,34 +29,34 @@ const Gallery = () => {
 
   const images = [
     {
-      url: "https://images.unsplash.com/photo-1605810230434-7631ac76ec81",
-      alt: "Pessoas em evento de Bitcoin",
-      caption: "Workshop sobre carteiras Bitcoin",
+      url: "/lovable-uploads/18cdae14-bf02-46a0-b0aa-197515582167.png",
+      alt: "Painel de discussão sobre Bitcoin",
+      caption: "Painel de discussão sobre adoção de Bitcoin",
     },
     {
-      url: "https://images.unsplash.com/photo-1519389950473-47ba0277781c",
-      alt: "Participantes em meetup",
-      caption: "Meetup mensal da comunidade",
-    },
-    {
-      url: "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158",
-      alt: "Workshop de Bitcoin",
-      caption: "Aprendizado prático sobre blockchain",
-    },
-    {
-      url: "https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5",
+      url: "/lovable-uploads/dde9bb8a-45bc-41a0-b09e-4861d6bd3bb8.png",
       alt: "Apresentação sobre criptomoedas",
-      caption: "Palestra sobre Bitcoin e privacidade",
+      caption: "Apresentação sobre o ecossistema Bitcoin",
     },
     {
-      url: "https://images.unsplash.com/photo-1492321936769-b49830bc1d1e",
-      alt: "Networking após evento",
-      caption: "Happy hour pós-evento",
+      url: "/lovable-uploads/b8ffa470-ca84-43ba-b224-762da66ca746.png",
+      alt: "Público engajado em evento",
+      caption: "Público atento às palestras",
     },
     {
-      url: "https://images.unsplash.com/photo-1500673922987-e212871fec22",
-      alt: "Demonstração de lightning network",
-      caption: "Demonstração de pagamentos instantâneos",
+      url: "/lovable-uploads/818d3374-7195-472c-97a5-f6533d0c1290.png",
+      alt: "Participantes do evento",
+      caption: "Participantes aprendendo sobre blockchain",
+    },
+    {
+      url: "/lovable-uploads/fe906817-551e-4f1b-984f-492811804fcd.png",
+      alt: "Comunidade comemorando",
+      caption: "Entusiasmo ao final da apresentação",
+    },
+    {
+      url: "/lovable-uploads/b729584f-8a07-4fcb-949a-6720d2360c93.png",
+      alt: "Encontro da comunidade Web3",
+      caption: "1º Encontro Web3 - Dezembro 2022",
     },
   ];
 

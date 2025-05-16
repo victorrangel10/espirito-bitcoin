@@ -1,6 +1,6 @@
 
 import { useState, useEffect, useRef } from "react";
-import { bitcoin } from "lucide-react";
+import { Bitcoin } from "lucide-react";
 
 const Contact = () => {
   const [isVisible, setIsVisible] = useState(false);
@@ -142,7 +142,7 @@ const Contact = () => {
                 taxas, sem a necessidade de intermediários.
               </p>
               <div className="flex items-center gap-2 text-espirito-blue">
-                <bitcoin className="w-6 h-6" />
+                <Bitcoin className="w-6 h-6" />
                 <span className="font-semibold">Junte-se à revolução financeira</span>
               </div>
             </div>
