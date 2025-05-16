@@ -64,7 +64,7 @@ const Hero = () => {
                 alt="Espírito Bitcoin Logo"
                 className="w-full h-full object-contain mix-blend-multiply"
               />
-              <div className="absolute -inset-1 rounded-full bg-gradient-to-r from-espirito-blue via-purple-500 to-espirito-orange opacity-50 blur-xl -z-10 animate-pulse" />
+              {/* Removed the blur effect div that was here */}
             </div>
           </div>
         </div>
