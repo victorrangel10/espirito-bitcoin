@@ -14,7 +14,7 @@ const Hero = () => {
       <div
         className="absolute inset-0 bg-espirito-blue z-0"
         style={{
-          backgroundImage: "url('https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80')",
+          backgroundColor: "#141c27",
           backgroundSize: "cover",
           backgroundPosition: "center",
           backgroundBlendMode: "soft-light",
