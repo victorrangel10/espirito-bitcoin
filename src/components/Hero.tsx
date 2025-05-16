@@ -60,7 +60,7 @@ const Hero = () => {
           >
             <div className="relative w-64 h-64 md:w-80 md:h-80">
               <img
-                src="/lovable-uploads/20b22cbe-e40a-4085-8e52-eb1da05d5cfa.png"
+                src="/lovable-uploads/logo.png"
                 alt="Espírito Bitcoin Logo"
                 className="w-full h-full object-contain"
               />
