@@ -42,7 +42,7 @@ const Navbar = () => {
 
         {/* Desktop Navigation */}
         <nav className="hidden md:flex items-center space-x-8">
-          {["Sobre", "Eventos", "Apoio", "Galeria", "Contato"].map(
+          {["Sobre", "Eventos", "Trilha", "Apoio", "Galeria", "Contato"].map(
             (item, index) => (
               <a
                 key={index}
@@ -84,7 +84,7 @@ const Navbar = () => {
       {mobileMenuOpen && (
         <div className="md:hidden bg-white shadow-lg">
           <div className="container mx-auto px-4 py-4 flex flex-col space-y-4">
-            {["Sobre", "Eventos", "Apoio", "Galeria", "Contato"].map(
+            {["Sobre", "Eventos", "Trilha", "Apoio", "Galeria", "Contato"].map(
               (item, index) => (
                 <a
                   key={index}
