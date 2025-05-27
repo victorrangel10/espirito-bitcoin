@@ -1,6 +1,6 @@
 
 import React, { useState } from "react";
-import { ChevronDown, ChevronUp, Play, ExternalLink } from "lucide-react";
+import { ChevronDown, ChevronUp, Play, Calendar } from "lucide-react";
 
 interface StepData {
   number: number;
@@ -76,8 +76,8 @@ const TrilhaStep = ({ step, isOdd }: TrilhaStepProps) => {
               <button className="bg-espirito-orange hover:bg-orange-600 text-white font-medium py-3 px-6 rounded-lg transition-all duration-300 flex items-center justify-center gap-2">
                 {step.number === 8 ? (
                   <>
-                    <ExternalLink className="w-5 h-5" />
-                    Entrar na Comunidade
+                    <Calendar className="w-5 h-5" />
+                    Participar do Evento
                   </>
                 ) : (
                   <>

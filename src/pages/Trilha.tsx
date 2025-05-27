@@ -3,7 +3,7 @@ import React from "react";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 import TrilhaStep from "../components/TrilhaStep";
-import { Lightbulb, Users, BookOpen, Shield, History, Building, MapPin, Heart } from "lucide-react";
+import { Lightbulb, Users, BookOpen, Shield, History, Building, MapPin, Heart, Calendar } from "lucide-react";
 
 const Trilha = () => {
   const steps = [
@@ -80,11 +80,14 @@ const Trilha = () => {
       {/* Header */}
       <section className="pt-24 pb-16 bg-gradient-to-br from-espirito-blue via-[#1a2332] to-espirito-blue text-white">
         <div className="container mx-auto px-4 text-center">
-          <h1 className="text-4xl md:text-6xl font-bold mb-6">
-            <span className="gradient-text">Trilha de Aprendizagem</span>
+          <h1 className="text-4xl md:text-6xl font-bold mb-6 text-white">
+            Trilha de Aprendizagem
           </h1>
-          <p className="text-xl md:text-2xl text-gray-200 max-w-4xl mx-auto">
-            Sua jornada completa para entender Bitcoin, blockchain e o futuro das finanças descentralizadas
+          <p className="text-xl md:text-2xl text-espirito-orange max-w-4xl mx-auto mb-4">
+            Transforme seu negócio: aceite Bitcoin e abra as portas para o futuro dos pagamentos
+          </p>
+          <p className="text-lg text-gray-200 max-w-3xl mx-auto">
+            Sua jornada completa para entender Bitcoin, blockchain e como implementar pagamentos descentralizados no seu empreendimento
           </p>
         </div>
       </section>
@@ -105,15 +108,15 @@ const Trilha = () => {
             Essa trilha é apenas o começo!
           </h2>
           <p className="text-lg md:text-xl text-gray-200 mb-8 max-w-2xl mx-auto">
-            Conecte-se com a comunidade e participe dos nossos encontros presenciais no Espírito Santo
+            Conecte-se com a comunidade e participe do nosso próximo evento presencial no Espírito Santo
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <a
-              href="#contato"
+              href="/#evento"
               className="bg-espirito-orange hover:bg-orange-600 text-white font-medium py-3 px-8 rounded-lg transition-all duration-300 flex items-center justify-center gap-2"
             >
-              <Users className="w-5 h-5" />
-              Entrar na Comunidade
+              <Calendar className="w-5 h-5" />
+              Participar do Próximo Evento
             </a>
             <a
               href="/"
