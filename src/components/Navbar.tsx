@@ -21,6 +21,15 @@ const Navbar = () => {
     };
   }, []);
 
+  const navItems = [
+    { name: "Sobre", href: "#sobre" },
+    { name: "Eventos", href: "#eventos" },
+    { name: "Trilha", href: "/trilha", isRoute: true },
+    { name: "Apoio", href: "#apoio" },
+    { name: "Galeria", href: "#galeria" },
+    { name: "Contato", href: "#contato" }
+  ];
+
   return (
     <header
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
@@ -42,19 +51,29 @@ const Navbar = () => {
 
         {/* Desktop Navigation */}
         <nav className="hidden md:flex items-center space-x-8">
-          {["Sobre", "Eventos", "Trilha", "Apoio", "Galeria", "Contato"].map(
-            (item, index) => (
-              <a
+          {navItems.map((item, index) => (
+            item.isRoute ? (
+              <Link
                 key={index}
-                href={`#${item.toLowerCase()}`}
+                to={item.href}
                 className={`font-medium transition-colors duration-300 ${
                   isScrolled ? "text-espirito-blue hover:text-espirito-orange" : "text-white hover:text-espirito-orange"
                 }`}
               >
-                {item}
+                {item.name}
+              </Link>
+            ) : (
+              <a
+                key={index}
+                href={item.href}
+                className={`font-medium transition-colors duration-300 ${
+                  isScrolled ? "text-espirito-blue hover:text-espirito-orange" : "text-white hover:text-espirito-orange"
+                }`}
+              >
+                {item.name}
               </a>
             )
-          )}
+          ))}
           <a 
             href="#evento" 
             className="btn-primary"
@@ -84,18 +103,27 @@ const Navbar = () => {
       {mobileMenuOpen && (
         <div className="md:hidden bg-white shadow-lg">
           <div className="container mx-auto px-4 py-4 flex flex-col space-y-4">
-            {["Sobre", "Eventos", "Trilha", "Apoio", "Galeria", "Contato"].map(
-              (item, index) => (
-                <a
+            {navItems.map((item, index) => (
+              item.isRoute ? (
+                <Link
                   key={index}
-                  href={`#${item.toLowerCase()}`}
+                  to={item.href}
                   className="font-medium text-espirito-blue hover:text-espirito-orange transition-colors duration-300"
                   onClick={() => setMobileMenuOpen(false)}
                 >
-                  {item}
+                  {item.name}
+                </Link>
+              ) : (
+                <a
+                  key={index}
+                  href={item.href}
+                  className="font-medium text-espirito-blue hover:text-espirito-orange transition-colors duration-300"
+                  onClick={() => setMobileMenuOpen(false)}
+                >
+                  {item.name}
                 </a>
               )
-            )}
+            ))}
             <a 
               href="#evento" 
               className="btn-primary text-center"
