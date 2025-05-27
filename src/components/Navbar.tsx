@@ -1,10 +1,11 @@
 
 import { useState, useEffect } from "react";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 
 const Navbar = () => {
   const [isScrolled, setIsScrolled] = useState(false);
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+  const location = useLocation();
 
   useEffect(() => {
     const handleScroll = () => {
@@ -29,6 +30,9 @@ const Navbar = () => {
     { name: "Galeria", href: "#galeria" },
     { name: "Contato", href: "#contato" }
   ];
+
+  // Check if we're on the trilha page
+  const isOnTrilhaPage = location.pathname === '/trilha';
 
   return (
     <header
@@ -63,19 +67,32 @@ const Navbar = () => {
                 {item.name}
               </Link>
             ) : (
-              <a
-                key={index}
-                href={item.href}
-                className={`font-medium transition-colors duration-300 ${
-                  isScrolled ? "text-espirito-blue hover:text-espirito-orange" : "text-white hover:text-espirito-orange"
-                }`}
-              >
-                {item.name}
-              </a>
+              // If we're on trilha page, redirect to home page with anchor
+              isOnTrilhaPage ? (
+                <Link
+                  key={index}
+                  to={`/${item.href}`}
+                  className={`font-medium transition-colors duration-300 ${
+                    isScrolled ? "text-espirito-blue hover:text-espirito-orange" : "text-white hover:text-espirito-orange"
+                  }`}
+                >
+                  {item.name}
+                </Link>
+              ) : (
+                <a
+                  key={index}
+                  href={item.href}
+                  className={`font-medium transition-colors duration-300 ${
+                    isScrolled ? "text-espirito-blue hover:text-espirito-orange" : "text-white hover:text-espirito-orange"
+                  }`}
+                >
+                  {item.name}
+                </a>
+              )
             )
           ))}
           <a 
-            href="#evento" 
+            href={isOnTrilhaPage ? "/#evento" : "#evento"}
             className="btn-primary"
           >
             Próximo Evento
@@ -114,18 +131,30 @@ const Navbar = () => {
                   {item.name}
                 </Link>
               ) : (
-                <a
-                  key={index}
-                  href={item.href}
-                  className="font-medium text-espirito-blue hover:text-espirito-orange transition-colors duration-300"
-                  onClick={() => setMobileMenuOpen(false)}
-                >
-                  {item.name}
-                </a>
+                // If we're on trilha page, redirect to home page with anchor
+                isOnTrilhaPage ? (
+                  <Link
+                    key={index}
+                    to={`/${item.href}`}
+                    className="font-medium text-espirito-blue hover:text-espirito-orange transition-colors duration-300"
+                    onClick={() => setMobileMenuOpen(false)}
+                  >
+                    {item.name}
+                  </Link>
+                ) : (
+                  <a
+                    key={index}
+                    href={item.href}
+                    className="font-medium text-espirito-blue hover:text-espirito-orange transition-colors duration-300"
+                    onClick={() => setMobileMenuOpen(false)}
+                  >
+                    {item.name}
+                  </a>
+                )
               )
             ))}
             <a 
-              href="#evento" 
+              href={isOnTrilhaPage ? "/#evento" : "#evento"}
               className="btn-primary text-center"
               onClick={() => setMobileMenuOpen(false)}
             >
