@@ -9,7 +9,7 @@ const Hero = () => {
   }, []);
 
   return (
-    <section className="relative min-h-screen flex items-center" id="home">
+    <section className="relative min-h-screen flex items-center overflow-hidden" id="home">
       {/* Background */}
       <div
         className="absolute inset-0 bg-espirito-blue z-0"
@@ -64,18 +64,18 @@ const Hero = () => {
                 alt="Espírito Bitcoin Logo"
                 className="w-full h-full object-contain mix-blend-multiply"
               />
-              {/* Removed the blur effect div that was here */}
             </div>
           </div>
         </div>
       </div>
 
-      {/* Wave divider */}
-      <div className="absolute bottom-0 left-0 right-0">
+      {/* Wave divider - Fixed positioning */}
+      <div className="absolute bottom-0 left-0 right-0 z-20 pointer-events-none">
         <svg
           xmlns="http://www.w3.org/2000/svg"
           viewBox="0 0 1440 320"
-          className="w-full"
+          className="w-full h-auto max-h-32"
+          preserveAspectRatio="none"
         >
           <path
             fill="#ffffff"

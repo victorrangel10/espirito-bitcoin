@@ -98,8 +98,14 @@
     @apply border-border;
   }
 
+  html {
+    overflow-x: hidden;
+  }
+
   body {
     @apply bg-background text-foreground font-poppins;
+    overflow-x: hidden;
+    position: relative;
   }
 }
 
