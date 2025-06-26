@@ -1,4 +1,3 @@
-
 import React, { useState, useRef } from "react";
 import { useForm } from "react-hook-form";
 import { Button } from "@/components/ui/button";
@@ -6,6 +5,7 @@ import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { Label } from "@/components/ui/label";
 import { useToast } from "@/hooks/use-toast";
+import { supabase } from "@/integrations/supabase/client";
 
 interface PartnershipFormData {
   name: string;
@@ -55,26 +55,28 @@ const Partnership = () => {
     setIsSubmitting(true);
     
     try {
-      // Simulating API call to /api/parcerias
-      const response = await fetch('/api/parcerias', {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
-        },
-        body: JSON.stringify(data),
-      });
-
-      if (response.ok) {
-        setIsSubmitted(true);
-        reset();
-        toast({
-          title: "Mensagem enviada!",
-          description: "Recebemos sua mensagem! Vamos responder em até 48h.",
+      const { error } = await supabase
+        .from('leads')
+        .insert({
+          nome: data.name,
+          email: data.email,
+          empresa: data.company || null,
+          mensagem: `${data.message}${data.phone ? `\n\nTelefone/WhatsApp: ${data.phone}` : ''}`
         });
-      } else {
-        throw new Error('Falha no envio');
+
+      if (error) {
+        console.error('Supabase error:', error);
+        throw error;
       }
+
+      setIsSubmitted(true);
+      reset();
+      toast({
+        title: "Mensagem enviada!",
+        description: "Recebemos sua mensagem! Vamos responder em até 48h.",
+      });
     } catch (error) {
+      console.error('Error submitting form:', error);
       toast({
         title: "Erro ao enviar",
         description: "Erro ao enviar. Tente novamente mais tarde.",
