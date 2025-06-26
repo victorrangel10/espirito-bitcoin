@@ -26,7 +26,7 @@ const Navbar = () => {
     { name: "Sobre", href: "#sobre" },
     { name: "Eventos", href: "#eventos" },
     { name: "Trilha", href: "/trilha", isRoute: true },
-    { name: "Apoio", href: "#apoio" },
+    { name: "Parcerias", href: "#parcerias" },
     { name: "Galeria", href: "#galeria" },
     { name: "Contato", href: "#contato" }
   ];
