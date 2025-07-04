@@ -36,7 +36,7 @@ const Event = () => {
       <div className="section-container">
         <div className="text-center mb-12">
           <h2 className={`section-title ${isVisible ? "animate-fade-in" : "opacity-0"}`}>
-            Destaque: Bitcoin Pizza Day
+            Destaque: Meetup Espirito Hub
           </h2>
           <p
             className={`section-subtitle max-w-3xl mx-auto ${
@@ -44,7 +44,7 @@ const Event = () => {
             }`}
             style={{ animationDelay: "0.2s" }}
           >
-            Venha celebrar o famoso Bitcoin Pizza Day com a nossa comunidade!
+            Venha participar do nosso meetup e conhecer a comunidade Bitcoin do Espírito Santo!
           </p>
         </div>
 
@@ -58,7 +58,7 @@ const Event = () => {
             <div className="relative">
               <img
                 src="/lovable-uploads/0cf961b1-0a7e-4122-b20c-295bb539adee.png"
-                alt="Bitcoin Pizza Day"
+                alt="Meetup Espirito Hub"
                 className="w-full h-64 object-cover object-center"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent flex items-end">
@@ -66,7 +66,7 @@ const Event = () => {
                   <p className="text-xs uppercase tracking-wider mb-1">
                     Evento Especial
                   </p>
-                  <h3 className="text-2xl font-bold">Bitcoin Pizza Day – Vila Velha</h3>
+                  <h3 className="text-2xl font-bold">Meetup Espirito Hub – Vila Velha</h3>
                 </div>
               </div>
             </div>
@@ -84,7 +84,7 @@ const Event = () => {
                   <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="none" viewBox="0 0 24 24" stroke="currentColor" className="text-espirito-blue">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"></path>
                   </svg>
-                  <span>8 de julho de 2025</span>
+                  <span>16 de julho de 2025</span>
                 </div>
                 <div className="flex items-center gap-2 text-gray-700">
                   <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="none" viewBox="0 0 24 24" stroke="currentColor" className="text-espirito-blue">
@@ -146,9 +146,9 @@ const Event = () => {
             style={{ animationDelay: "0.4s" }}
           >
             <div className="bg-white p-6 rounded-xl shadow-lg border-l-4 border-espirito-blue">
-              <h3 className="text-xl font-semibold mb-2">O que é o Bitcoin Pizza Day?</h3>
+              <h3 className="text-xl font-semibold mb-2">O que é o Meetup Espirito Hub?</h3>
               <p className="text-gray-600">
-                Em 22 de maio de 2010, Laszlo Hanyecz fez a primeira compra de um bem físico usando Bitcoin: duas pizzas por 10.000 BTC! Hoje, celebramos essa data histórica com pizza e conhecimento sobre Bitcoin.
+                Um encontro da comunidade Bitcoin do Espírito Santo para compartilhar conhecimento, experiências e fortalecer nossa rede local. Venha conhecer pessoas apaixonadas por Bitcoin e tecnologia!
               </p>
             </div>
 
