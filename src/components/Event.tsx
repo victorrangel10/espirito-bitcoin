@@ -1,5 +1,9 @@
 
 import { useState, useEffect, useRef } from "react";
+import EventHeader from "./EventHeader";
+import EventDetails from "./EventDetails";
+import EventSchedule from "./EventSchedule";
+import EventInfo from "./EventInfo";
 
 const Event = () => {
   const [isVisible, setIsVisible] = useState(false);
@@ -34,175 +38,15 @@ const Event = () => {
       ref={sectionRef}
     >
       <div className="section-container">
-        <div className="text-center mb-12">
-          <h2 className={`section-title ${isVisible ? "animate-fade-in" : "opacity-0"}`}>
-            Destaque: Meetup Espirito Hub
-          </h2>
-          <p
-            className={`section-subtitle max-w-3xl mx-auto ${
-              isVisible ? "animate-fade-in" : "opacity-0"
-            }`}
-            style={{ animationDelay: "0.2s" }}
-          >
-            Venha participar do nosso meetup e conhecer a comunidade Bitcoin do Espírito Santo!
-          </p>
-        </div>
+        <EventHeader isVisible={isVisible} />
 
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
-          <div
-            className={`bg-white rounded-xl shadow-lg overflow-hidden ${
-              isVisible ? "animate-fade-in" : "opacity-0"
-            }`}
-            style={{ animationDelay: "0.3s" }}
-          >
-            <div className="relative">
-              <img
-                src="/lovable-uploads/28420fc8-0a74-44fd-810f-84b1c08fb13f.png"
-                alt="Meetup Espirito Hub"
-                className="w-full h-64 object-cover object-center"
-              />
-              <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent flex items-end">
-                <div className="p-6 text-white">
-                  <p className="text-xs uppercase tracking-wider mb-1">
-                    Evento Especial
-                  </p>
-                  <h3 className="text-2xl font-bold">Meetup Espirito Hub – Vitória</h3>
-                </div>
-              </div>
-            </div>
-
-            <div className="p-6">
-              <div className="flex flex-wrap gap-4 mb-6">
-                <div className="flex items-center gap-2 text-gray-700">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="none" viewBox="0 0 24 24" stroke="currentColor" className="text-espirito-blue">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path>
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path>
-                  </svg>
-                  <span>NaCapital – Unidade Rio Branco (Av. Rio Branco, 1383 – Praia do Canto, Vitória)</span>
-                </div>
-                <div className="flex items-center gap-2 text-gray-700">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="none" viewBox="0 0 24 24" stroke="currentColor" className="text-espirito-blue">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"></path>
-                  </svg>
-                  <span>16 de julho de 2025</span>
-                </div>
-                <div className="flex items-center gap-2 text-gray-700">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="none" viewBox="0 0 24 24" stroke="currentColor" className="text-espirito-blue">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path>
-                  </svg>
-                  <span>18:30h às 21:00h</span>
-                </div>
-              </div>
-
-              <h4 className="font-semibold text-lg mb-3 text-espirito-blue">
-                Programação
-              </h4>
-              <ul className="space-y-3 mb-6">
-                <li className="flex items-start gap-2">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" viewBox="0 0 24 24" stroke="currentColor" className="text-espirito-orange mt-1">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
-                  </svg>
-                  <span>Apresentação do Espírito Bitcoin</span>
-                </li>
-                <li className="flex items-start gap-2">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" viewBox="0 0 24 24" stroke="currentColor" className="text-espirito-orange mt-1">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
-                  </svg>
-                  <span>Painel: "Aplicando o Bitcoin no dia a dia"</span>
-                </li>
-                <li className="flex items-start gap-2">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" viewBox="0 0 24 24" stroke="currentColor" className="text-espirito-orange mt-1">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
-                  </svg>
-                  <span>Pizza & Happy Hour 🍕</span>
-                </li>
-              </ul>
-
-              <div className="border-t border-gray-200 pt-4 mb-6">
-                <h4 className="font-semibold text-lg mb-3 text-espirito-blue">
-                  Facilitadores
-                </h4>
-                <div className="flex flex-wrap gap-2">
-                  <span className="bg-gray-100 text-gray-800 px-3 py-1 rounded-full text-sm">
-                    Luiz Hadad
-                  </span>
-                  <span className="bg-gray-100 text-gray-800 px-3 py-1 rounded-full text-sm">
-                    Bernardo Nassar
-                  </span>
-                  <span className="bg-gray-100 text-gray-800 px-3 py-1 rounded-full text-sm">
-                    Marlon Fernandes
-                  </span>
-                </div>
-              </div>
-
-              <a href="#contato" className="btn-primary w-full block text-center">
-                Quero Participar!
-              </a>
-            </div>
+          <div className="space-y-6">
+            <EventDetails isVisible={isVisible} />
+            <EventSchedule />
           </div>
-
-          <div
-            className={`space-y-6 ${isVisible ? "animate-fade-in-right" : "opacity-0"}`}
-            style={{ animationDelay: "0.4s" }}
-          >
-            <div className="bg-white p-6 rounded-xl shadow-lg border-l-4 border-espirito-blue">
-              <h3 className="text-xl font-semibold mb-2">🚀 Vem aí mais uma edição do Conexões de Impacto!</h3>
-              <p className="text-gray-600 mb-4">
-                Dessa vez, vamos mergulhar no universo da Web3 — um tema que está mudando o jeito de empreender, investir e se conectar com o mundo.
-              </p>
-              <p className="text-gray-600">
-                Você ainda não entenda muito bem o que é blockchain, tokens ou descentralização… calma! Esse encontro é justamente pra isso. 😉
-              </p>
-            </div>
-
-            <div className="bg-white p-6 rounded-xl shadow-lg border-l-4 border-espirito-orange">
-              <h3 className="text-xl font-semibold mb-2">Por que participar?</h3>
-              <ul className="space-y-2 text-gray-600">
-                <li className="flex items-start gap-2">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" viewBox="0 0 24 24" stroke="currentColor" className="text-espirito-orange mt-1">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
-                  </svg>
-                  <span>Conheça pessoas interessadas no ecossistema Bitcoin</span>
-                </li>
-                <li className="flex items-start gap-2">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" viewBox="0 0 24 24" stroke="currentColor" className="text-espirito-orange mt-1">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
-                  </svg>
-                  <span>Aprenda conceitos práticos sobre uso de criptomoedas</span>
-                </li>
-                <li className="flex items-start gap-2">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" viewBox="0 0 24 24" stroke="currentColor" className="text-espirito-orange mt-1">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
-                  </svg>
-                  <span>Descubra oportunidades de negócios e colaboração</span>
-                </li>
-                <li className="flex items-start gap-2">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" viewBox="0 0 24 24" stroke="currentColor" className="text-espirito-orange mt-1">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
-                  </svg>
-                  <span>Deliciosas pizzas e networking descontraído</span>
-                </li>
-              </ul>
-            </div>
-
-            <div className="bg-white p-6 rounded-xl shadow-lg border-l-4 border-green-500">
-              <h3 className="text-xl font-semibold mb-2">Para todos os níveis</h3>
-              <p className="text-gray-600 mb-4">
-                Não importa se você é iniciante ou especialista em Bitcoin, o evento foi desenhado para ser acessível e valioso para todos os níveis de conhecimento.
-              </p>
-              <div className="flex flex-wrap gap-2">
-                <span className="bg-green-100 text-green-800 px-3 py-1 rounded-full text-sm">
-                  Iniciantes
-                </span>
-                <span className="bg-yellow-100 text-yellow-800 px-3 py-1 rounded-full text-sm">
-                  Intermediários
-                </span>
-                <span className="bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-sm">
-                  Avançados
-                </span>
-              </div>
-            </div>
-          </div>
+          
+          <EventInfo isVisible={isVisible} />
         </div>
       </div>
     </section>
