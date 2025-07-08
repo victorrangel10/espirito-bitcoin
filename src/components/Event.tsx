@@ -1,4 +1,3 @@
-
 import { useState, useEffect, useRef } from "react";
 
 const Event = () => {
@@ -66,7 +65,7 @@ const Event = () => {
                   <p className="text-xs uppercase tracking-wider mb-1">
                     Evento Especial
                   </p>
-                  <h3 className="text-2xl font-bold">Meetup Espirito Hub – Vila Velha</h3>
+                  <h3 className="text-2xl font-bold">Meetup Espirito Hub – Vitória</h3>
                 </div>
               </div>
             </div>
@@ -78,7 +77,7 @@ const Event = () => {
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path>
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path>
                   </svg>
-                  <span>We Believe Hub - Vila Velha / ES</span>
+                  <span>NaCapital – Unidade Rio Branco (Av. Rio Branco, 1383 – Praia do Canto, Vitória)</span>
                 </div>
                 <div className="flex items-center gap-2 text-gray-700">
                   <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="none" viewBox="0 0 24 24" stroke="currentColor" className="text-espirito-blue">
@@ -90,7 +89,7 @@ const Event = () => {
                   <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="none" viewBox="0 0 24 24" stroke="currentColor" className="text-espirito-blue">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path>
                   </svg>
-                  <span>19:30h</span>
+                  <span>18:30h às 21:00h</span>
                 </div>
               </div>
 
