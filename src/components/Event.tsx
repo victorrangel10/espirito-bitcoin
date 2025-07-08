@@ -146,9 +146,12 @@ const Event = () => {
             style={{ animationDelay: "0.4s" }}
           >
             <div className="bg-white p-6 rounded-xl shadow-lg border-l-4 border-espirito-blue">
-              <h3 className="text-xl font-semibold mb-2">O que é o Meetup Espirito Hub?</h3>
+              <h3 className="text-xl font-semibold mb-2">🚀 Vem aí mais uma edição do Conexões de Impacto!</h3>
+              <p className="text-gray-600 mb-4">
+                Dessa vez, vamos mergulhar no universo da Web3 — um tema que está mudando o jeito de empreender, investir e se conectar com o mundo.
+              </p>
               <p className="text-gray-600">
-                Um encontro da comunidade Bitcoin do Espírito Santo para compartilhar conhecimento, experiências e fortalecer nossa rede local. Venha conhecer pessoas apaixonadas por Bitcoin e tecnologia!
+                Você ainda não entenda muito bem o que é blockchain, tokens ou descentralização… calma! Esse encontro é justamente pra isso. 😉
               </p>
             </div>
 
