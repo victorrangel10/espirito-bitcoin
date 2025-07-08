@@ -1,3 +1,4 @@
+
 import { useState, useEffect, useRef } from "react";
 
 const Event = () => {
@@ -56,7 +57,7 @@ const Event = () => {
           >
             <div className="relative">
               <img
-                src="/lovable-uploads/0cf961b1-0a7e-4122-b20c-295bb539adee.png"
+                src="/lovable-uploads/28420fc8-0a74-44fd-810f-84b1c08fb13f.png"
                 alt="Meetup Espirito Hub"
                 className="w-full h-64 object-cover object-center"
               />
