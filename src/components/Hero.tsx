@@ -32,7 +32,7 @@ const Hero = () => {
           >
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-4">
               <span className="block">Espírito Bitcoin:</span>
-              <span className="gradient-text">Educação. Inovação. Adoção.</span>
+              <span className="gradient-text">Educação. Adoção. Comunidade.</span>
             </h1>
 
             <p className="text-xl md:text-2xl opacity-90 mb-8">

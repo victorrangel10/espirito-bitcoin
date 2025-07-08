@@ -1,4 +1,3 @@
-
 interface EventDetailsProps {
   isVisible: boolean;
 }
@@ -19,9 +18,6 @@ const EventDetails = ({ isVisible }: EventDetailsProps) => {
         />
         <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent flex items-end">
           <div className="p-6 text-white">
-            <p className="text-xs uppercase tracking-wider mb-1">
-              Evento Especial
-            </p>
             <h3 className="text-2xl font-bold">Conexões de Impacto: Web3 ES</h3>
           </div>
         </div>
