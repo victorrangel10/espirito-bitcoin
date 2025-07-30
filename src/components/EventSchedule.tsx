@@ -11,7 +11,7 @@ const EventSchedule = () => {
             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
           </svg>
           <div>
-            <span className="font-medium">19:00</span> - Chegada
+            <span className="font-medium">19:00</span> - Recepção e networking
           </div>
         </li>
         <li className="flex items-start gap-2">
@@ -19,7 +19,7 @@ const EventSchedule = () => {
             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
           </svg>
           <div>
-            <span className="font-medium">19:20</span> - Boas-vindas
+            <span className="font-medium">19:30</span> - O que é a Devconnect e por que estamos otimistas com o Ethereum? — Luiz Hadad
           </div>
         </li>
         <li className="flex items-start gap-2">
@@ -27,7 +27,7 @@ const EventSchedule = () => {
             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
           </svg>
           <div>
-            <span className="font-medium">19:30</span> - Apresentação Impact Hub
+            <span className="font-medium">20:00</span> - Painel: Construindo no Ethereum – iniciativas locais: Luiz Hadad, Rodrigo Torres (Token Base)
           </div>
         </li>
         <li className="flex items-start gap-2">
@@ -35,7 +35,7 @@ const EventSchedule = () => {
             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
           </svg>
           <div>
-            <span className="font-medium">19:40</span> - Apresentação Espírito Bitcoin
+            <span className="font-medium">20:30</span> - Próximos eventos ETH na América Latina: ETH Latam e Devconnect
           </div>
         </li>
         <li className="flex items-start gap-2">
@@ -43,40 +43,39 @@ const EventSchedule = () => {
             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
           </svg>
           <div>
-            <span className="font-medium">19:50</span> - Investortech Ventures - Nosso trabalho e missão (Mentoria e Investimento)
-          </div>
-        </li>
-        <li className="flex items-start gap-2">
-          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" viewBox="0 0 24 24" stroke="currentColor" className="text-espirito-orange mt-1">
-            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
-          </svg>
-          <div>
-            <span className="font-medium">20:00</span> - MangroveDLT - Internacionalização
-          </div>
-        </li>
-        <li className="flex items-start gap-2">
-          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" viewBox="0 0 24 24" stroke="currentColor" className="text-espirito-orange mt-1">
-            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
-          </svg>
-          <div>
-            <span className="font-medium">20:10</span> - Painel: "Como podemos construir um hub Web3 no ES?" | Impact Hub, Espírito Bitcoin e Investortech
+            <span className="font-medium">21:00</span> - Happy hour
           </div>
         </li>
       </ul>
 
       <div className="border-t border-gray-200 pt-4">
         <h4 className="font-semibold text-lg mb-3 text-espirito-blue">
-          Organizadores
+          Patrocinadores
+        </h4>
+        <div className="flex flex-wrap gap-2 mb-4">
+          <span className="bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-sm">
+            Time da Devconnect - Ethereum Foundation
+          </span>
+          <span className="bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-sm">
+            Investortech Ventures
+          </span>
+          <span className="bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-sm">
+            MangroveDLT
+          </span>
+        </div>
+
+        <h4 className="font-semibold text-lg mb-3 text-espirito-blue">
+          Apoio
         </h4>
         <div className="flex flex-wrap gap-2">
           <span className="bg-gray-100 text-gray-800 px-3 py-1 rounded-full text-sm">
-            Impact Hub
+            We Believe Hub
           </span>
           <span className="bg-gray-100 text-gray-800 px-3 py-1 rounded-full text-sm">
-            Espírito Bitcoin
+            Hortifruti
           </span>
           <span className="bg-gray-100 text-gray-800 px-3 py-1 rounded-full text-sm">
-            Investortech
+            Padaria Nossa Senhora da Penha
           </span>
         </div>
       </div>

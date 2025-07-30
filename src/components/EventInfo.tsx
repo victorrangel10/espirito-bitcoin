@@ -10,12 +10,12 @@ const EventInfo = ({ isVisible }: EventInfoProps) => {
       style={{ animationDelay: "0.4s" }}
     >
       <div className="bg-white p-6 rounded-xl shadow-lg border-l-4 border-espirito-blue">
-        <h3 className="text-xl font-semibold mb-2">🚀 Vem aí mais uma edição do Conexões de Impacto!</h3>
+        <h3 className="text-xl font-semibold mb-2">🚀 Ethereum Espirito Santo - Destino Devconnect</h3>
         <p className="text-gray-600 mb-4">
-          Dessa vez, vamos mergulhar no universo da Web3 — um tema que está mudando o jeito de empreender, investir e se conectar com o mundo.
+          Esse meetup vai apresentar à comunidade capixaba os fundamentos do Ethereum, relembrar a trajetória dos últimos dez anos e explicar por que estamos super otimistas para o futuro.
         </p>
         <p className="text-gray-600">
-          Você ainda não entenda muito bem o que é blockchain, tokens ou descentralização… calma! Esse encontro é justamente pra isso. 😉
+          Também faremos um painel sobre como é construir no ecossistema Ethereum, com o objetivo de incentivar a comunidade local, e encerraremos falando sobre os próximos grandes eventos na região: ETH Latam (São Paulo) e Devconnect (Argentina).
         </p>
       </div>
 
@@ -26,25 +26,25 @@ const EventInfo = ({ isVisible }: EventInfoProps) => {
             <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" viewBox="0 0 24 24" stroke="currentColor" className="text-espirito-orange mt-1">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
             </svg>
-            <span>Conheça pessoas interessadas no ecossistema Web3</span>
+            <span>Aprenda os fundamentos do Ethereum com especialistas</span>
           </li>
           <li className="flex items-start gap-2">
             <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" viewBox="0 0 24 24" stroke="currentColor" className="text-espirito-orange mt-1">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
             </svg>
-            <span>Aprenda sobre blockchain, tokens e descentralização</span>
+            <span>Conheça iniciativas locais construindo no Ethereum</span>
           </li>
           <li className="flex items-start gap-2">
             <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" viewBox="0 0 24 24" stroke="currentColor" className="text-espirito-orange mt-1">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
             </svg>
-            <span>Descubra oportunidades de investimento e mentoria</span>
+            <span>Descubra os próximos eventos ETH Latam e Devconnect</span>
           </li>
           <li className="flex items-start gap-2">
             <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" viewBox="0 0 24 24" stroke="currentColor" className="text-espirito-orange mt-1">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
             </svg>
-            <span>Participe de networking especializado</span>
+            <span>Networking com a comunidade Ethereum do ES</span>
           </li>
         </ul>
       </div>
@@ -52,7 +52,7 @@ const EventInfo = ({ isVisible }: EventInfoProps) => {
       <div className="bg-white p-6 rounded-xl shadow-lg border-l-4 border-green-500">
         <h3 className="text-xl font-semibold mb-2">Para todos os níveis</h3>
         <p className="text-gray-600 mb-4">
-          Não importa se você é iniciante ou especialista em Web3, o evento foi desenhado para ser acessível e valioso para todos os níveis de conhecimento.
+          Não importa se você é iniciante ou especialista em Ethereum, o evento foi desenhado para ser acessível e valioso para todos os níveis de conhecimento sobre blockchain e ecossistema Ethereum.
         </p>
         <div className="flex flex-wrap gap-2">
           <span className="bg-green-100 text-green-800 px-3 py-1 rounded-full text-sm">

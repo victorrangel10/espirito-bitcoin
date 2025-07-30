@@ -18,7 +18,7 @@ const EventDetails = ({ isVisible }: EventDetailsProps) => {
         />
         <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent flex items-end">
           <div className="p-6 text-white">
-            <h3 className="text-2xl font-bold">Conexões de Impacto: Web3 ES</h3>
+            <h3 className="text-2xl font-bold">Ethereum Espirito Santo - Destino Devconnect</h3>
           </div>
         </div>
       </div>

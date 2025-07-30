@@ -7,7 +7,7 @@ const EventHeader = ({ isVisible }: EventHeaderProps) => {
   return (
     <div className="text-center mb-12">
       <h2 className={`section-title ${isVisible ? "animate-fade-in" : "opacity-0"}`}>
-        Destaque: Conexões de Impacto Web3 ES
+        Ethereum Espirito Santo - Destino Devconnect
       </h2>
       <p
         className={`section-subtitle max-w-3xl mx-auto ${
@@ -15,7 +15,7 @@ const EventHeader = ({ isVisible }: EventHeaderProps) => {
         }`}
         style={{ animationDelay: "0.2s" }}
       >
-        Venha participar do nosso encontro e conhecer o ecossistema Web3 do Espírito Santo!
+        Apresentando os fundamentos do Ethereum e construindo o futuro da tecnologia blockchain no ES!
       </p>
     </div>
   );
