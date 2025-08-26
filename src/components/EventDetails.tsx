@@ -30,7 +30,7 @@ const EventDetails = ({ isVisible }: EventDetailsProps) => {
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path>
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path>
             </svg>
-            <span>NaCapital – Unidade Rio Branco (Av. Rio Branco, 1383 – Praia do Canto, Vitória)</span>
+            <span>We Believe Hub - R. Piratininga, 222 - Praia da Costa, Vila Velha - ES, 29101-220</span>
           </div>
           <div className="flex items-center gap-2 text-gray-700">
             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="none" viewBox="0 0 24 24" stroke="currentColor" className="text-espirito-blue">
@@ -52,7 +52,7 @@ const EventDetails = ({ isVisible }: EventDetailsProps) => {
           </div>
         </div>
 
-        <a href="#contato" className="btn-primary w-full block text-center">
+        <a href="https://lu.ma/t6t5gcex" target="_blank" rel="noopener noreferrer" className="btn-primary w-full block text-center">
           Quero Participar!
         </a>
       </div>
